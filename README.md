@@ -7,6 +7,9 @@
  <a href="#equipe">Equipe</a>
 </p>
 
+<p align="center">
+ <a href="#s1">Sprint 1</a> 
+</p>
 
 <hr>
 
@@ -20,11 +23,30 @@ A solução proposta envolve o desenvolvimento de estações meteorológicas de 
 
 # Sprints do Projeto <a id="api"></a>
 
+### Sprint 1: <a id="s1"></a>
+
+Na primeira Sprint tivemos um foco intenso na criação da Arquitetura, modelagem do Banco de Dados, e a criação dos CRUDs de todas as tabelas contempladas pela modelagem de dados.
+
+
+####  BackLog da Sprint 1:
+| DESCRIÇÃO                                  | PRIORIZAÇÃO |
+| ------------------------------------------ | ----------- |
+| ARQUITETURA DO PROJETO                     | ALTA        |
+| PROTOTIPAGEM / LAYOUT                      | ALTA        |
+| ESTRUTURAÇÃO E MODELAGEM DO BANCO DE DADOS | ALTA        |
+| CRUD DE USUÁRIOS                           | ALTA        |
+| CRUD DE ESTAÇÕES                           | ALTA        |
+
+
+#### BurnDown Sprint 1:
+
+<img src="./docs/SprintBurndown.jpg" alt="BurnDown">
+
 
 # Product Backlog Total: <a id="backlog"></a>
 
 | SPRINT | DESCRIÇÃO                                  | PRIORIZAÇÃO |
-|--------|--------------------------------------------|-------------|
+| ------ | ------------------------------------------ | ----------- |
 | 1      | ARQUITETURA DO PROJETO                     | ALTA        |
 | 1      | PROTOTIPAGEM / LAYOUT                      | ALTA        |
 | 1      | ESTRUTURAÇÃO E MODELAGEM DO BANCO DE DADOS | ALTA        |
@@ -52,11 +74,11 @@ A solução proposta envolve o desenvolvimento de estações meteorológicas de 
 
 
 # :busts_in_silhouette: Equipe: <a id="equipe"></a>
-|| Nome | Github |Função |
-|--------|------|-|-|
-<a href="https://github.com/Miguel-C1"><img src ="https://avatars.githubusercontent.com/u/104818982?v=4" align="center" height="50" width="50"></a>|Miguel Soares|https://github.com/Miguel-C1| Scrum Master |
-<a href="https://github.com/zani19"><img src ="https://avatars.githubusercontent.com/u/111464795?v=4" align="center" height="50" width="50"></a>|Gabriel Briscese|https://github.com/zani19|Product Owner |
-<a href="https://github.com/CaioVitorDias1"><img src="https://avatars.githubusercontent.com/u/79228873?v=4" align="center" height="50" width="50"></a>|Caio Dias|https://github.com/CaioVitorDias1|   Desenvolvedor |
-<a href="https://github.com/Briscese"><img src="https://avatars.githubusercontent.com/u/83350007?v=4" align="center" height="50" width="50"></a>|Gabriel Briscese|https://github.com/Briscese|Desenvolvedor |
-<a href="https://github.com/jonasrsribeiro"><img src="https://avatars.githubusercontent.com/u/110861110?v=4" align="center" height="50" width="50"></a>|Jonas Ribeiro|https://github.com/jonasrsribeiro| Desenvolvedor |
-<a href="https://github.com/PedroHSdeAlmeida"><img src="https://avatars.githubusercontent.com/u/106109294?v=4" align="center" height="50" width="50"></a>|Pedro Almeida|https://github.com/PedroHSdeAlmeida| Desenvolvedor |
+|                                                                                                                                                           | Nome             | Github                              | Função        |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------------------- | ------------- |
+| <a href="https://github.com/Miguel-C1"><img src ="https://avatars.githubusercontent.com/u/104818982?v=4" align="center" height="50" width="50"></a>       | Miguel Soares    | https://github.com/Miguel-C1        | Scrum Master  |
+| <a href="https://github.com/zani19"><img src ="https://avatars.githubusercontent.com/u/111464795?v=4" align="center" height="50" width="50"></a>          | Gabriel Briscese | https://github.com/zani19           | Product Owner |
+| <a href="https://github.com/CaioVitorDias1"><img src="https://avatars.githubusercontent.com/u/79228873?v=4" align="center" height="50" width="50"></a>    | Caio Dias        | https://github.com/CaioVitorDias1   | Desenvolvedor |
+| <a href="https://github.com/Briscese"><img src="https://avatars.githubusercontent.com/u/83350007?v=4" align="center" height="50" width="50"></a>          | Gabriel Briscese | https://github.com/Briscese         | Desenvolvedor |
+| <a href="https://github.com/jonasrsribeiro"><img src="https://avatars.githubusercontent.com/u/110861110?v=4" align="center" height="50" width="50"></a>   | Jonas Ribeiro    | https://github.com/jonasrsribeiro   | Desenvolvedor |
+| <a href="https://github.com/PedroHSdeAlmeida"><img src="https://avatars.githubusercontent.com/u/106109294?v=4" align="center" height="50" width="50"></a> | Pedro Almeida    | https://github.com/PedroHSdeAlmeida | Desenvolvedor |
