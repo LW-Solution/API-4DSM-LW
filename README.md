@@ -9,6 +9,7 @@
 
 <p align="center">
  <a href="#s1">Sprint 1</a> 
+ <a href="#s2">Sprint 2</a> 
 </p>
 
 <hr>
@@ -42,6 +43,23 @@ Na primeira Sprint tivemos um foco intenso na criação da Arquitetura, modelage
 
 <img src="./docs/SprintBurndown.jpg" alt="BurnDown">
 
+### Sprint 2: <a id="s2"></a>
+
+Na segunda Sprint fizemos os serviços de recepção de Dados, Tratamento e Armazenamento Juntamente com as Features de Emissão De Alertas e DashBoards. 
+
+####  BackLog da Sprint 2:
+| DESCRIÇÃO                                           | PRIORIZAÇÃO |
+| --------------------------------------------------- | ----------- |
+| 2      | ATRIBUTOS DE ESTAÇÕES                      | MÉDIA       |
+| 2      | TIPOS DE ESTAÇÕES                          | MÉDIA       |
+| 2      | RECEBIMENTO E ARMAZENAMENTO DE DADOS       | MÉDIA       |
+| 2      | CRIAÇÃO DE DASHBOARDS                      | MÉDIA       |
+
+
+#### BurnDown Sprint 2:
+
+<img src="./docs/SprintBurndown2.jpg" alt="BurnDown">
+
 
 # Product Backlog Total: <a id="backlog"></a>
 
@@ -53,8 +71,6 @@ Na primeira Sprint tivemos um foco intenso na criação da Arquitetura, modelage
 | 1      | CRUD DE USUÁRIOS                           | ALTA        |
 | 1      | CRUD DE ESTAÇÕES                           | ALTA        |
 | 1      | CRUD DE PARÂMETROS PARA ESTAÇÕES           | ALTA        |
-| 2      | CONTROLE DE ACESSO                         | MÉDIA       |
-| 2      | GERENCIAMENTO DE USUÁRIOS E ESTAÇÕES       | MÉDIA       |
 | 2      | ATRIBUTOS DE ESTAÇÕES                      | MÉDIA       |
 | 2      | TIPOS DE ESTAÇÕES                          | MÉDIA       |
 | 2      | RECEBIMENTO E ARMAZENAMENTO DE DADOS       | MÉDIA       |
