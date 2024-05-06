@@ -48,12 +48,12 @@ Na primeira Sprint tivemos um foco intenso na criação da Arquitetura, modelage
 Na segunda Sprint fizemos os serviços de recepção de Dados, Tratamento e Armazenamento Juntamente com as Features de Emissão De Alertas e DashBoards. 
 
 ####  BackLog da Sprint 2:
-| DESCRIÇÃO                                           | PRIORIZAÇÃO |
-| --------------------------------------------------- | ----------- |
-| 2      | ATRIBUTOS DE ESTAÇÕES                      | MÉDIA       |
-| 2      | TIPOS DE ESTAÇÕES                          | MÉDIA       |
-| 2      | RECEBIMENTO E ARMAZENAMENTO DE DADOS       | MÉDIA       |
-| 2      | CRIAÇÃO DE DASHBOARDS                      | MÉDIA       |
+| DESCRIÇÃO                                  | PRIORIZAÇÃO |
+| ------------------------------------------ | ----------- |
+| ATRIBUTOS DE ESTAÇÕES                      | MÉDIA       |
+| TIPOS DE ESTAÇÕES                          | MÉDIA       |
+| RECEBIMENTO E ARMAZENAMENTO DE DADOS       | MÉDIA       |
+| CRIAÇÃO DE DASHBOARDS                      | MÉDIA       |
 
 
 #### BurnDown Sprint 2:
