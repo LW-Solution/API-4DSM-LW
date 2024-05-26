@@ -10,6 +10,7 @@
 <p align="center">
  <a href="#s1">Sprint 1</a> 
  <a href="#s2">Sprint 2</a> 
+  <a href="#s3">Sprint 3</a> 
 </p>
 
 <hr>
@@ -60,6 +61,20 @@ Na segunda Sprint fizemos os serviços de recepção de Dados, Tratamento e Arma
 
 <img src="./docs/SprintBurndown2.jpg" alt="BurnDown">
 
+### Sprint 3: <a id="s3"></a>
+
+Na terceira Sprint fizemos alguns ajustes como em alertas e DashBoards e realizamos a programação da placa enviar dados. 
+
+####  BackLog da Sprint 3:
+| DESCRIÇÃO                                  | PRIORIZAÇÃO |
+| ------------------------------------------ | ----------- |
+| MANDAR DADOS PELA PLACA                    | BAIXA       |
+
+
+#### BurnDown Sprint 3:
+
+<img src="./docs/SprintBurndown3.jpg" alt="BurnDown">
+
 
 # Product Backlog Total: <a id="backlog"></a>
 
@@ -75,11 +90,11 @@ Na segunda Sprint fizemos os serviços de recepção de Dados, Tratamento e Arma
 | 2      | TIPOS DE ESTAÇÕES                          | MÉDIA       |
 | 2      | RECEBIMENTO E ARMAZENAMENTO DE DADOS       | MÉDIA       |
 | 2      | CRIAÇÃO DE DASHBOARDS                      | MÉDIA       |
-| 3      | VISUALIZAÇÃO DE DADOS POR USUÁRIOS         | MÉDIA       |
-| 3      | DESENVOLVIMENTO DE DATALOGGER              | MÉDIA       |
-| 3      | APLICAÇÃO DE ESTATÍSTICAS AOS DASHBOARDS   | MÉDIA       |
-| 3      | EMISSÃO DE ALERTAS                         | BAIXA       |
-| 3      | TUTORIAL PARA USUÁRIOS COMUNS              | BAIXA       |
+| 2      | EMISSÃO DE ALERTAS                         | BAIXA       |
+| 2      | VISUALIZAÇÃO DE DADOS POR USUÁRIOS         | MÉDIA       |
+| 2      | DESENVOLVIMENTO DE DATALOGGER              | MÉDIA       |
+| 2      | APLICAÇÃO DE ESTATÍSTICAS AOS DASHBOARDS   | MÉDIA       |
+| 3      | MANDAR DADOS PELA PLACA                    | BAIXA       |
 | 4      | CRIAÇÃO DE RELATÓRIOS                      | BAIXA       |
 | 4      | ALERTAS PARA USUÁRIOS COMUNS               | BAIXA       |
 | 4      | GERAÇÃO DE RELATÓRIOS PARA USUÁRIOS        | BAIXA       |
