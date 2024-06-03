@@ -77,7 +77,7 @@ O escopo de cada teste é definido pelo arquivo criado, ou seja, se há um arqui
 
 ## Processo de CI
 
-Este documento descreve o processo de Integração Contínua (CI) e Deploy Contínuo (CD) para o nosso projeto. Ele inclui a organização das branches, as regras de merge, e o pipeline de CI/CD configurado para builds, testes e deploys automáticos.
+Este documento descreve o processo de Integração Contínua (CI) para o nosso projeto.
 
 ## Fluxo de Trabalho
 
@@ -108,7 +108,7 @@ Este documento descreve o processo de Integração Contínua (CI) e Deploy Cont�
 
 - A cada PR aberto ou merge em qualquer uma das branches (`develop`, `staging`, `prod`), o projeto é automaticamente buildado.
 - Testes de Integração são executados para garantir que nada foi quebrado.
-- Na branch `develop` as imagens Docker são atualizadas para refletir as mudanças.
+- Nas branchs `develop` e `prod` as imagens Docker são atualizadas para refletir as mudanças.
 
 ### Processo do Job da `develop`
 
