@@ -96,6 +96,31 @@ Este documento descreve o processo de Integração Contínua (CI) para o nosso p
 - Se o PR é aprovado, a tarefa é mergeada na `staging`.
 - Caso contrário, feedback é fornecido, e o desenvolvedor faz as correções necessárias antes de tentar novamente.
 
+ #### 2.1. Validando uma Tarefa de desenvolvimento
+   ##### Requisitos:
+   - **Docker Desktop**: Necessário para gerenciar contêineres.
+   - **Git**: Necessário para clonar o repositório e realizar operações de controle de versão.
+  
+   ##### Requisitos Opcionais:
+   - **Node**: Para caso você queira Rodar algum repositório que utilize node diretamente de forma individual em sua máquina
+   - **Python**: Para caso você queira Rodar algum repositório que utilize Python diretamente de forma individual em sua máquina
+  
+   ##### Passos:
+   - Clonar o Repositório utilizando o comando `git clone [url do repositorio]`
+  Exemplo: ``` git clone https://github.com/LW-Solution/controller-gerenciamento-estacoes-metricas.git ```
+   - Navegar até a Pasta do Projeto
+   - Iniciar o Docker Compose abra o terminal (CMD) dentro da pasta onde o arquivo docker-compose.dev.yaml está localizado e execute o comando para iniciar os contêineres.
+   Comando: ``` docker-compose -f .\docker-compose.dev.yaml up -d ```
+   - Aguarde que todas as imagens e Contêineres sejam criados e rodados no Docker Desktop
+  ##### Atualizar Imagens e Contêineres
+  Para garantir que você está usando as versões mais recentes das imagens Docker, execute os comandos abaixo:
+  - Pull das Imagens Mais Recentes
+   ```docker-compose -f .\docker-compose.dev.yaml pull```
+  - Reconstruir e Reiniciar os Contêineres
+  ``` docker-compose -f .\docker-compose.dev.yaml up -d --build ```
+  - Esses comandos irão atualizar as imagens e reconstruir os contêineres, garantindo que você está testando com as versões mais recentes.
+
+
 ### 3. Entrega da Sprint
 
 - Ao final de cada sprint, um PR é aberto da `staging` para a `prod`.
