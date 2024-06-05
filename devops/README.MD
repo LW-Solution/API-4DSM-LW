@@ -24,6 +24,7 @@ Rastreabilidade
 
 Para a realização dos testes foram elaborados diferentes estratégias de processos de acordo com a necessidade de cada tipo de serviço. O projeto possui vários serviços ativos que são divididos, basicamente, em serviços Node e Python, há também um repositório em código C de modelo para dispositivos IOT.
 Tendo isso em vista, se faz necessário, ocasionalmente, divergir nas estratégias dos processos de testes entre os serviços.
+O foco definido pela equipe para os testes foram os testes de integração. E para isso, foi definido um integrante para ser o "tester" da implacação toda. 
 Os processos foram divididos da seguinte forma:
 - Serviços Node backend (estações métricas e autenticação);
 - Serviço Node frontend;
@@ -31,7 +32,7 @@ Os processos foram divididos da seguinte forma:
 
 #### Processo de teste Node backend:
 
-O processo começa com o ínicio de alguma feature, logo deve-se respeitar os padrões estabelecidos de commits e etc. Assim que o desenvolvedor terminar a adição, ele deve ir na pasta "test" presente na raiz dos repositórios, e seguir ou estipular o caminho dos arquivos alterados na pasta "src", porém nesta pasta "test". Após isso, ele deve fazer o teste unitário ou de integração referente às adições realizadas. Terminando o teste, deve-se rodar o seguinte comando na raiz do projeto: "npm run test"; E então será iniciado um script que rodará todos os testes disponíveis. Se tudo der "OK" então o dev poderá fazer o merge de suas alterações com a branch "develop". Ao final da sprint, antes de juntar a "develop" com a "prod" os testes devem ser rodados novamente para garantir que de fato não há problemas e só então deverá ser feito o merge com a branch de produção.
+O processo começa com o ínicio de alguma feature, logo deve-se respeitar os padrões estabelecidos de commits e etc. Assim que o desenvolvedor terminar a adição e fizer o push de sua branch, seguindo o fluxo de testes, o tester entrará em ação e assim, ele deve ir na pasta "test" presente na raiz dos repositórios, e seguir ou estipular o caminho dos arquivos alterados na pasta "src", porém nesta pasta "test". Após isso, ele deve fazer os testes de integração referentes às adições realizadas. Terminando o teste, deve-se rodar o seguinte comando na raiz do projeto: "npm run test"; E então será iniciado um script que rodará todos os testes disponíveis. Se tudo der "OK" então o tester poderá fazer o merge de suas alterações com a branch "develop". Ao final da sprint, antes de juntar a "develop" com a "prod" os testes devem ser rodados novamente para garantir que de fato não há problemas e só então deverá ser feito o merge com a branch de produção.
 
 #### Bibliotecas utilizadas:
 - jest;
@@ -72,6 +73,10 @@ O motivo da escolha dessa lib é por sua simplicidade e eficiencia já que não 
 #### Especificações:
 
 O escopo de cada teste é definido pelo arquivo criado, ou seja, se há um arquivo "app.py" que precisa ter seus métodos testados, todos os testes referentes a eles devem ficar no arquivo "test_app.py". Dentro de cada arquivo de teste deve haver uma classe "TestApp(unittet.TestCase)", e cada teste deve representar uma função dentro da classe. O nome dessas funções deve descrever o escopo daquele teste específico. Vale ressaltar que toda função de teste deve possuir uma asserção de um valor esperado.
+
+#### Fluxo Geral dos Testes
+
+Testes de integração geralmente envolvem partes do código em que mais de um desenvolvedor esteve trabalhando. Isso implica que há a necessidade de estabelecer certas condições para que os testes possam ser criados. Portanto, durante a fase de levantamento das features e requisitos a serem trabalhados deve-se também estipular quais features devem ser terminadas para que os testes de integração referente à elas, sejam elaborados, essa definição será marcada como uma tarefa do tipo "(TESTE)". Esse é o caso para os testes iniciais, após as features em questão forem terminadas, então o tester já estará pronto para pegar a tarefa, realizar os testes numa branch "(feature/teste_tal_coisa)", seguir o processo definido praquele serviço, e enfim, finalizar a tarefa e sua branch. Para o caso dos testes iniciais já terem sido criados e, eventuais features que não haviam sido planejadas previamente, surjam, então o tester (ou o/os próprio/os dev/devs) deverá abrir uma nova tarefa "(TESTE)" e implementar os testes das funcionalidades que abordam aquela feature, e então seguir o mesmo esquema do caso anterior.
 
 ## CI: <a id="ci"></a>
 
