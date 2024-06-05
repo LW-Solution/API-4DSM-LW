@@ -62,7 +62,7 @@ Cada teste possui um escopo que deve ser respeitado e cada escopo é definido pe
 
 #### Processo de teste Python backend:
 
-Para o processo dos serviços em python é necessário gerar um arquivo de teste seguindo a nomenclatura (test_ + nome arquivo) de forma que o nome do arquivo faça referência à operação específica que ele testerá, esse mesmo nome deve ser aplicado a uma pasta dentro da pasta "test". Após desenvolvido os testes, deve-se abrir o terminal dentro da pasta "test" e rodar o seguinte comando: "python -m unittest". Se tudo der "OK" então já é possível fazer o merge com a branch develop. Antes de mergear com a branch prod é necessário rodar os testes novamente para garantir que está tudo okay.
+Para o processo dos serviços em python é necessário gerar um arquivo de teste seguindo a nomenclatura (test_ + nome arquivo) de forma que o nome do arquivo faça referência à operação específica que ele testerá, esse mesmo nome deve ser aplicado a uma pasta dentro da pasta "test", é preciso também criar um arquivo vazio chamado "__init__.py" em cada pasta pois isso é um padrão requirido para que a lib encontre os testes. Após desenvolvido os testes, deve-se abrir o terminal dentro da pasta "test" e rodar o seguinte comando: "python -m unittest". Se tudo der "OK" então já é possível fazer o merge com a branch develop. Antes de mergear com a branch prod é necessário rodar os testes novamente para garantir que está tudo okay.
 
 #### Bibliotecas utilizadas:
 - unittest (padrão do python);
