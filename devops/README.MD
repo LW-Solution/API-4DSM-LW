@@ -24,7 +24,7 @@ Rastreabilidade
 
 Para a realização dos testes foram elaborados diferentes estratégias de processos de acordo com a necessidade de cada tipo de serviço. O projeto possui vários serviços ativos que são divididos, basicamente, em serviços Node e Python, há também um repositório em código C de modelo para dispositivos IOT.
 Tendo isso em vista, se faz necessário, ocasionalmente, divergir nas estratégias dos processos de testes entre os serviços.
-O foco definido pela equipe para os testes foram os testes de integração. E para isso, foi definido um integrante para ser o "tester" da implacação toda. 
+O foco definido pela equipe para os testes foram os testes de integração. E para isso, foi definido um integrante para ser o "tester" da aplicação toda. 
 Os processos foram divididos da seguinte forma:
 - Serviços Node backend (estações métricas e autenticação);
 - Serviço Node frontend;
@@ -100,6 +100,7 @@ Este documento descreve o processo de Integração Contínua (CI) para o nosso p
   - Não é necessário revisar o código detalhadamente, mas garantir que a funcionalidade está conforme o esperado.
 - Se o PR é aprovado, a tarefa é mergeada na `staging`.
 - Caso contrário, feedback é fornecido, e o desenvolvedor faz as correções necessárias antes de tentar novamente.
+- Após isso, a depender do fluxo de testes, caso todas as features referentes à tarefa de teste tenham sido completadas, o tester deverá realizar os testes iniciais de integração conforme o fluxo de teste e o processo de teste específico. Caso os testes iniciais já tenham sido criados e haja o surgimento de uma nova feature que enquadre aquele mesmo escopo, então novos testes serão criados porém implementando os já existentes.
 
  #### 2.1. Validando uma Tarefa de desenvolvimento
    ##### Requisitos:
