@@ -84,55 +84,6 @@ Testes de integração geralmente envolvem partes do código em que mais de um d
 
 Este documento descreve o processo de Integração Contínua (CI) para o nosso projeto.
 
-## Fluxo de Trabalho
-
-### 1. Desenvolvimento Diário
-
-- Os desenvolvedores criam branches a partir da `develop` para trabalhar em suas tarefas.
-- Realizam commits frequentes em suas branches de tarefa.
-- Ao final do dia (ou de cada sessão de trabalho), fazem merges dessas branches de tarefa na `develop` via PRs, que podem ser aprovadas por eles mesmos.
-
-### 2. Validação de Tarefas
-
-- Quando uma tarefa é concluída, o desenvolvedor abre um PR da sua branch de tarefa para a `staging`.
-- Outro membro da equipe, que não esteve envolvido na tarefa, revisa o PR.
-  - Verifica se a tarefa foi cumprida conforme os requisitos.
-  - Não é necessário revisar o código detalhadamente, mas garantir que a funcionalidade está conforme o esperado.
-- Se o PR é aprovado, a tarefa é mergeada na `staging`.
-- Caso contrário, feedback é fornecido, e o desenvolvedor faz as correções necessárias antes de tentar novamente.
-- Após isso, a depender do fluxo de testes, caso todas as features referentes à tarefa de teste tenham sido completadas, o tester deverá realizar os testes iniciais de integração conforme o fluxo de teste e o processo de teste específico. Caso os testes iniciais já tenham sido criados e haja o surgimento de uma nova feature que enquadre aquele mesmo escopo, então novos testes serão criados porém implementando os já existentes.
-
- #### 2.1. Validando uma Tarefa de desenvolvimento
-   ##### Requisitos:
-   - **Docker Desktop**: Necessário para gerenciar contêineres.
-   - **Git**: Necessário para clonar o repositório e realizar operações de controle de versão.
-  
-   ##### Requisitos Opcionais:
-   - **Node**: Para caso você queira Rodar algum repositório que utilize node diretamente de forma individual em sua máquina
-   - **Python**: Para caso você queira Rodar algum repositório que utilize Python diretamente de forma individual em sua máquina
-  
-   ##### Passos:
-   - Clonar o Repositório utilizando o comando `git clone [url do repositorio]`
-  Exemplo: ``` git clone https://github.com/LW-Solution/controller-gerenciamento-estacoes-metricas.git ```
-   - Navegar até a Pasta do Projeto
-   - Iniciar o Docker Compose abra o terminal (CMD) dentro da pasta onde o arquivo docker-compose.dev.yaml está localizado e execute o comando para iniciar os contêineres.
-   Comando: ``` docker-compose -f .\docker-compose.dev.yaml up -d ```
-   - Aguarde que todas as imagens e Contêineres sejam criados e rodados no Docker Desktop
-  ##### Atualizar Imagens e Contêineres
-  Para garantir que você está usando as versões mais recentes das imagens Docker, execute os comandos abaixo:
-  - Pull das Imagens Mais Recentes
-   ```docker-compose -f .\docker-compose.dev.yaml pull```
-  - Reconstruir e Reiniciar os Contêineres
-  ``` docker-compose -f .\docker-compose.dev.yaml up -d --build ```
-  - Esses comandos irão atualizar as imagens e reconstruir os contêineres, garantindo que você está testando com as versões mais recentes.
-
-
-### 3. Entrega da Sprint
-
-- Ao final de cada sprint, um PR é aberto da `staging` para a `prod`.
-- Este PR deve ser revisado para garantir que todas as funcionalidades planejadas estão corretamente implementadas.
-- Após a aprovação, o merge é realizado e a entrega é tagueada na `prod`.
-
 ## Pipeline CI
 
 ### Builds Automáticos
