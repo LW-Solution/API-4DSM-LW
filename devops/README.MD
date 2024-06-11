@@ -119,8 +119,6 @@ Este documento descreve o processo de Integração Contínua (CI) para o nosso p
    - Código é compilado.
    - Testes integração são executados.
 
-3. **Merge para para a `prod`**
-   - É realizado um merge automático a `prod` após todos os passos acima serem realizados com sucesso. 
 
 ### Processo do Job da `prod`
 
