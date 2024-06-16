@@ -98,7 +98,7 @@ Este documento descreve o processo de Integração Contínua (CI) para o nosso p
    - Desenvolvedores fazem commits e push do código para o repositório.
 
 2. **Build e Testes**:
-   - Pipeline é acionado automaticamente.
+   - Dependências instaladas.
    - Código é compilado.
    - Testes de integração são executados.
 
@@ -115,7 +115,7 @@ Este documento descreve o processo de Integração Contínua (CI) para o nosso p
    - Desenvolvedores fazem commits e push do código para o repositório.
 
 2. **Build e Testes**:
-   - Pipeline é acionado automaticamente.
+   - Depêndencias Instaladas
    - Código é compilado.
    - Testes integração são executados.
 
@@ -126,7 +126,7 @@ Este documento descreve o processo de Integração Contínua (CI) para o nosso p
    - Desenvolvedores fazem commits e push do código para o repositório.
 
 2. **Build e Testes**:
-   - Pipeline é acionado automaticamente.
+   - Depêndencias Instaladas.
    - Código é compilado.
    - Testes de integração são executados.
 
