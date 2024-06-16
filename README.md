@@ -11,6 +11,7 @@
  <a href="#s1">Sprint 1</a> 
  <a href="#s2">Sprint 2</a> 
   <a href="#s3">Sprint 3</a> 
+  <a href="#s4">Sprint 3</a> 
 </p>
 
 <hr>
@@ -74,6 +75,24 @@ Na terceira Sprint fizemos alguns ajustes como em alertas e DashBoards e realiza
 #### BurnDown Sprint 3:
 
 <img src="./docs/SprintBurndown3.jpg" alt="BurnDown">
+
+### Sprint 4: <a id="s4"></a>
+
+Na terceira Sprint fizemos alguns ajustes como em alertas e DashBoards e realizamos a programação da placa enviar dados. 
+
+####  BackLog da Sprint 4:
+| DESCRIÇÃO                                   | PRIORIZAÇÃO |
+| ------------------------------------------- | ----------- |
+|  CRIAÇÃO DE RELATÓRIOS                      | BAIXA       |
+|  ALERTAS PARA USUÁRIOS COMUNS               | BAIXA       |
+|  GERAÇÃO DE RELATÓRIOS PARA USUÁRIOS        | BAIXA       |
+|  SUPORTE AO USUÁRIO COMUM                   | BAIXA       |
+|  TUTORIAL SOBRE PARÂMETROS METEOROLÓGICOS   | BAIXA       |
+
+
+#### BurnDown Sprint 4:
+
+<img src="./docs/SprintBurndown4.jpg" alt="BurnDown">
 
 
 # Product Backlog Total: <a id="backlog"></a>
